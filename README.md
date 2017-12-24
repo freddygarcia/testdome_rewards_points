@@ -3,6 +3,7 @@ The following RewardPoint class tracks the points every customer has earned.
 
 ### Conditions
 Class must comply with following requirements:
+
 * When a customer earn points for first time, will receive an additional 500 bonus points.
 * _spend points_ show always return the points that customer has earned. If customer doest no exist, zero must be returned.
 * If 0 or less points is passed to _earn_points_ the custmer's point should be unaffected.
