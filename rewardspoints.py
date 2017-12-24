@@ -16,7 +16,10 @@ class RewardPoints:
 				self.customers[customer_name] += 500
 				# save customer given points
 				self.given_bonus.append(customer_name)
-	
+
+		# return current customer points
+		return self.customers[customer_name]
+
 	def spend_points(self, customer_name, points):
 
 		# spent points must be a positive number 
@@ -30,6 +33,10 @@ class RewardPoints:
 		# return current customer points
 		return self.customers[customer_name]
 
-rewardPoints = RewardPoints()
-rewardPoints.earn_points('John', 520)
-print(rewardPoints.spend_points('John', 200))
+	def consult_points(self, customer_name):
+		return self.customers[customer_name]
+
+if __name__ == '__main__':
+	rewardPoints = RewardPoints()
+	rewardPoints.earn_points('John', 520)
+	print(rewardPoints.spend_points('John', 200))
